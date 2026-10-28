@@ -1,0 +1,22 @@
+name: kinex_pose
+description: "Live pose capture for Kinex: camera + MediaPipe Tasks PoseLandmarker (full model), landmarks, world landmarks and the person mask of every frame."
+version: 0.1.0
+publish_to: 'none'
+
+environment:
+  sdk: ^3.11.0
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.kinex.kinex_pose
+        pluginClass: KinexPosePlugin

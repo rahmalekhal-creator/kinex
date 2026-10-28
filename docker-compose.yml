@@ -1,0 +1,48 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: kinex-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: physio_clinic
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./database/physio_clinic.sql:/docker-entrypoint-initdb.d/01_physio_clinic.sql:ro
+      - kinex_mysql_data:/var/lib/mysql
+
+  backend:
+    build:
+      context: .
+      dockerfile: reed/Dockerfile
+    container_name: kinex-backend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./reed:/var/www/html/reed
+    environment:
+      DB_HOST: db
+      DB_USER: root
+      DB_PASS: ""
+      DB_NAME: physio_clinic
+      DB_PORT: 3306
+    depends_on:
+      - db
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: kinex-phpmyadmin
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+    depends_on:
+      - db
+
+volumes:
+  kinex_mysql_data:
+

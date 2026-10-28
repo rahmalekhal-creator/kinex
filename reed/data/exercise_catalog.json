@@ -1,0 +1,118 @@
+{
+  "regions": [
+    {
+      "id": "shoulder",
+      "label": "Shoulder",
+      "order": 1
+    },
+    {
+      "id": "hip",
+      "label": "Hip",
+      "order": 2
+    }
+  ],
+  "exercises": [
+    {
+      "id": "e1",
+      "region": "shoulder",
+      "order": 1,
+      "name": "Stick elevation (active-assisted forward elevation)",
+      "side_question": "Which arm is the injured one?",
+      "side_meaning": "the injured arm (both hands hold the stick)",
+      "model": {
+        "config": "mt_final.json",
+        "file": "mt_e1.onnx",
+        "bundle": "shoulder_app_bundle"
+      },
+      "classes": [
+        "good",
+        "elb",
+        "rngdown",
+        "imb"
+      ],
+      "camera": "from the front, upper body and arms in view (from the knees up)",
+      "instructions": [
+        "Stand facing the phone, holding a stick with both hands, arms straight down.",
+        "Stand still for 2 seconds.",
+        "Lift the stick forward and up with straight elbows, then lower it all the way down."
+      ]
+    },
+    {
+      "id": "e2",
+      "region": "shoulder",
+      "order": 2,
+      "name": "Arm abduction",
+      "side_question": "Which arm will you lift?",
+      "side_meaning": "the working arm",
+      "model": {
+        "config": "mt_final.json",
+        "file": "mt_e2.onnx",
+        "bundle": "shoulder_app_bundle"
+      },
+      "classes": [
+        "good",
+        "elb",
+        "rngdown",
+        "shld",
+        "lean"
+      ],
+      "camera": "from the front, upper body and arms in view (from the knees up)",
+      "instructions": [
+        "Stand facing the phone, arms by your sides.",
+        "Stand still for 2 seconds.",
+        "Lift the arm sideways with a straight elbow, without shrugging or leaning, then lower it to your side."
+      ]
+    },
+    {
+      "id": "e3",
+      "region": "shoulder",
+      "order": 3,
+      "name": "Arm rotation (elbow at the side)",
+      "side_question": "Which arm will you rotate?",
+      "side_meaning": "the working arm",
+      "model": {
+        "config": "mt_final.json",
+        "file": "mt_e3.onnx",
+        "bundle": "shoulder_app_bundle"
+      },
+      "classes": [
+        "good",
+        "wrong"
+      ],
+      "camera": "from the front, upper body and arms in view (from the knees up)",
+      "instructions": [
+        "Stand facing the phone, elbow bent at 90 degrees and against your side.",
+        "Stand still for 2 seconds.",
+        "Rotate the forearm outward and back, keeping the elbow against your body."
+      ]
+    },
+    {
+      "id": "e4",
+      "region": "hip",
+      "order": 1,
+      "name": "Standing hip abduction (chair support)",
+      "side_question": "Which leg will you lift?",
+      "side_meaning": "the lifted leg (stand on the other leg, holding the chair)",
+      "model": {
+        "config": "e4_head.json",
+        "file": "mt_e4.onnx",
+        "bundle": "e4_app_bundle"
+      },
+      "classes": [
+        "good",
+        "knee",
+        "leanin",
+        "leanout"
+      ],
+      "camera": "from the FRONT, the WHOLE body in view including both feet (unlike e1-e3: the ankles are the main points), phone upright at hip height about 2-3 m away; the chair beside the standing leg, the patient holding it; image NOT mirrored (un-mirror the selfie preview before MediaPipe), upright (rotate by the sensor orientation)",
+      "range_target": "the physiotherapist can set a target angle per patient (degrees); see app_spec_e4.json range",
+      "instructions": [
+        "Stand facing the phone, with a chair beside you; hold it with the hand on the side of the leg you stand on. Your whole body, feet included, must be in view.",
+        "Stand still for 2 seconds.",
+        "Lift the other leg sideways, knee straight and trunk upright, then lower it with control.",
+        "Lift only as far as you can with a good form: your physiotherapist sets your target."
+      ]
+    }
+  ],
+  "note": "ids, regions and model files are used by the code; names, questions and instructions are display text (change them freely). e1-e3 names: keep the ones the app already uses if they differ."
+}

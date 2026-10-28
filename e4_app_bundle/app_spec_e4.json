@@ -1,0 +1,114 @@
+{
+  "exercise": {
+    "id": "e4",
+    "name": "Standing hip abduction (chair support)",
+    "body_region": "hip",
+    "classes": [
+      "good",
+      "knee",
+      "leanin",
+      "leanout"
+    ],
+    "class_text": {
+      "good": "trunk upright, straight leg lifted sideways and lowered with control - at any range (the range is checked against the physio's target angle, not by the model)",
+      "knee": "the knee of the lifted leg bends during the lift",
+      "leanin": "the trunk tilts sideways toward the lifted leg",
+      "leanout": "the trunk tilts sideways away from the lifted leg (toward the chair side)",
+      "shallow": "the leg is lifted only a little (range too small) - merged into good for the model"
+    },
+    "label_map_of_the_recordings": {
+      "good": "good",
+      "knee": "knee",
+      "leanin": "leanin",
+      "leanout": "leanout",
+      "shallow": "good"
+    },
+    "note": "4 form classes: 'shallow' (small lift) was merged into good for the model - the range is the range rule below, against a target the physiotherapist sets per patient"
+  },
+  "model": {
+    "config": "e4_head.json",
+    "file": "mt_e4.onnx",
+    "name": "e4 head on the frozen InceptionTime encoder of the final joint network",
+    "onnx_inputs": "x: float32 (reps, C_sel, T_LEN) raw stored channels in e4_head.json heads.e4.input_selection order; f: float32 (reps, F) raw per-rep measures in heads.e4.features order, NaN allowed. Output 'probs': (reps, K) in heads.e4.classes order. Normalisation is inside the file.",
+    "lopo_macro_f1": 0.952384,
+    "check": {
+      "onnx_file": "mt_e4.onnx",
+      "onnx_present": true,
+      "onnxruntime": true,
+      "pytorch": true,
+      "onnx_mb": 1.31,
+      "random_inputs_max_diff": 0.0,
+      "onnx_ms_per_rep_this_cpu": 1.25,
+      "encoder_same_as_shoulder_model": true,
+      "encoder_max_weight_diff": 0.0,
+      "values_outside_the_encoder": 9700,
+      "real_reps_max_diff": 1.78813934e-07,
+      "same_as_pytorch": true
+    }
+  },
+  "mediapipe": {
+    "api": "MediaPipe Tasks PoseLandmarker (the same model and settings as e1-e3)",
+    "model_file": "pose_landmarker_full.task",
+    "model_url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/latest/pose_landmarker_full.task",
+    "running_mode": "VIDEO (recorded) or LIVE_STREAM (camera); timestamps in ms must increase",
+    "num_poses": 1,
+    "min_pose_detection_confidence": 0.5,
+    "min_pose_presence_confidence": 0.5,
+    "min_tracking_confidence": 0.5,
+    "output_segmentation_masks": false,
+    "target_fps": 30,
+    "max_side": 1280,
+    "landmarks": "normalized landmarks (x, y in 0..1 of the frame, z, visibility, presence) AND world landmarks (metres); keep the frame width/height: pixel = normalized x width / y height",
+    "camera": "from the FRONT, the WHOLE body in view including both feet (unlike e1-e3: the ankles are the main points), phone upright at hip height about 2-3 m away; the chair beside the standing leg, the patient holding it; image NOT mirrored (un-mirror the selfie preview before MediaPipe), upright (rotate by the sensor orientation)"
+  },
+  "pipeline": {
+    "module": "reference_python/leg_ds.py: analyze_video(d, side=<lifted leg>, n_geo=0, rr_levels=())",
+    "fs": 30.0,
+    "max_gap_s": 0.5,
+    "seg": {
+      "min_rep_s": 0.6,
+      "max_rep_s": 20,
+      "prominence": 0.35
+    },
+    "T_LEN": 64,
+    "margin_s": 0.5,
+    "min_valid": 0.8,
+    "baseline": {
+      "base_s": 1.5,
+      "gap_s": 0.15,
+      "min_s": 0.4
+    },
+    "count_signal": "abd_leg_a",
+    "count_signal_text": "leg angle away from the body (hip -> ankle line against the trunk's own axis, degrees)",
+    "side": "the LIFTED leg (the app asks it, or the physiotherapist sets it in the prescription); the patient stands on the other leg holding the chair. If the other leg clearly moves more, analyze_video uses it and reports side_conflict = true: show messages.side_conflict",
+    "get_ready": "ask the patient to stand still about 2 s before the first lift (the first-break reference)",
+    "same_as_e1_e3": "resampling to 30 Hz, rep segmentation (segment_reps), first-break baseline (baseline_frames), rep window (rep_window: start - 0.5 s .. end + 0.5 s), resampling to 64 frames (to_T): the same functions as e1-e3 (shoulder_lib / shoulder_ds)",
+    "new_for_e4": "leg_ds: choose_leg, compute_signals, canonical_coords, _frame_matrix, rep_features"
+  },
+  "feedback": {
+    "messages": {
+      "e4": {
+        "good": "Good rep - well done",
+        "knee": "Keep your {leg} knee straight while you lift the leg",
+        "leanin": "Keep your trunk upright - do not lean toward the leg you lift",
+        "leanout": "Keep your trunk upright - do not lean away from the leg (toward the chair)"
+      },
+      "range_low": "Good form - lift your leg a bit higher: target {target:.0f} deg, you reached {reached:.0f} deg",
+      "unsure": "Not sure about this rep - check that your whole body, feet included, is in view",
+      "partial": "Rep cut by the start/end of the recording - not scored",
+      "side_conflict": "It looks like you are lifting your other leg - check the side chosen for this exercise"
+    },
+    "min_confidence": 0.5,
+    "rule": "confidence < min_confidence -> 'unsure'; label != good -> the class message; label == good -> range check (below the target -> range_low, else good). Partial reps (cut by the start/end) are counted, not scored."
+  },
+  "range": {
+    "measure": "g4_abd_leg_peak",
+    "measure_text": "leg angle away from the body at the top of the rep (degrees); it is per-rep measure g4_abd_leg_peak of analyze_video (also in f)",
+    "therapist_target_deg": null,
+    "relative_fraction": 0.755,
+    "fixed_threshold_deg": 27.4,
+    "order": "1) the physiotherapist's target angle for the patient (stored with the prescription); 2) else relative_fraction x the patient's usual lift (median peak of their good reps, e.g. of the first session); 3) else fixed_threshold_deg",
+    "only_for_good_form": true,
+    "why": "range of motion is person-specific (full lift ~31-60 deg between people): leave-one-person-out, a target relative to the person's own lift was right for 95.4% of the reps vs 85.7% for one fixed angle. Judged only on good-form reps: leaning changes the leg angle (it is measured against the trunk)."
+  }
+}

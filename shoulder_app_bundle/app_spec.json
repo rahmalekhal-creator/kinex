@@ -1,0 +1,163 @@
+{
+  "models": {
+    "multitask": {
+      "name": "multi-task network (es)",
+      "config": "mt_final.json",
+      "files": {
+        "e1": "mt_e1.onnx",
+        "e2": "mt_e2.onnx",
+        "e3": "mt_e3.onnx"
+      },
+      "needs_silhouette": {
+        "e1": false,
+        "e2": true,
+        "e3": false
+      }
+    },
+    "separate": {
+      "name": "separate networks of the final notebook",
+      "config": "separate.json",
+      "files": {
+        "e1": "sep_e1.onnx",
+        "e2": "sep_e2.onnx",
+        "e3": "sep_e3.onnx"
+      },
+      "needs_silhouette": {
+        "e1": false,
+        "e2": true,
+        "e3": false
+      }
+    },
+    "default": "multitask",
+    "switch": "developer setting: both use the same pipeline; only the ONNX file and the heads entry (input_selection, features, classes) of the chosen config file change"
+  },
+  "model": {
+    "onnx_inputs": "x: float32 (reps, C_sel, T_LEN) raw stored channels in mt_final.json heads[ex].input_selection order; f: float32 (reps, F) raw per-rep features in heads[ex].features order, NaN allowed. Output 'probs': (reps, K) in heads[ex].classes order. Normalisation is inside the file."
+  },
+  "mediapipe": {
+    "api": "MediaPipe Tasks PoseLandmarker (NOT ML Kit, NOT MoveNet: the network was trained on this model)",
+    "model_file": "pose_landmarker_full.task",
+    "model_url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/latest/pose_landmarker_full.task",
+    "running_mode": "VIDEO (recorded) or LIVE_STREAM (camera); timestamps in ms must increase",
+    "num_poses": 1,
+    "min_pose_detection_confidence": 0.5,
+    "min_pose_presence_confidence": 0.5,
+    "min_tracking_confidence": 0.5,
+    "output_segmentation_masks": {
+      "e1": false,
+      "e2": true,
+      "e3": false
+    },
+    "target_fps": 30,
+    "max_side": 1280,
+    "landmarks": "normalized landmarks (x, y in 0..1 of the frame, z, visibility, presence) AND world landmarks (metres); keep the frame width/height: pixel = normalized x width / y height",
+    "camera": "feed the camera image NOT mirrored (selfie previews are mirrored: un-mirror before MediaPipe), upright (rotate by the sensor orientation), the whole body from the knees up in view, from the front"
+  },
+  "pipeline": {
+    "fs": 30.0,
+    "max_gap_s": 0.5,
+    "seg": {
+      "e1": {
+        "min_rep_s": 0.6,
+        "max_rep_s": 20,
+        "prominence": 0.35
+      },
+      "e2": {
+        "min_rep_s": 0.6,
+        "max_rep_s": 20,
+        "prominence": 0.35
+      },
+      "e3": {
+        "min_rep_s": 0.6,
+        "max_rep_s": 20,
+        "prominence": 0.35
+      }
+    },
+    "T_LEN": 64,
+    "margin_s": 0.5,
+    "min_valid": 0.8,
+    "baseline": {
+      "base_s": 1.5,
+      "gap_s": 0.15,
+      "min_s": 0.4
+    },
+    "gate_deg": 100.0,
+    "single_arm": {
+      "e1": false,
+      "e2": true,
+      "e3": true
+    },
+    "count_signal": {
+      "e1": "lift",
+      "e2": "elev_a",
+      "e3": "rot"
+    },
+    "side": "e2/e3: the arm that does the exercise; e1 (both arms, stick): the injured arm - the app asks it",
+    "get_ready": "ask the patient to stand still about 2 s before the first rep (the first-break reference)",
+    "angle_signal": {
+      "e1": "elev_mean",
+      "e2": "elev_a",
+      "e3": "rot_deg"
+    }
+  },
+  "feedback": {
+    "messages": {
+      "e1": {
+        "good": "Good rep - well done",
+        "elb": "Keep your elbows straight while you lift the stick",
+        "rngdown": "Lower the stick all the way down between reps",
+        "imb": "Lift the stick evenly - raise your {arm} arm as high as the other one"
+      },
+      "e2": {
+        "good": "Good rep - well done",
+        "elb": "Keep your elbow straight",
+        "rngdown": "Bring your arm all the way down to your side between reps",
+        "shld": "Do not shrug - keep your shoulder down while the arm goes up to shoulder height",
+        "lean": "Keep your trunk upright - do not lean to lift the arm"
+      },
+      "e3": {
+        "good": "Good rep - well done",
+        "wrong": "Keep your elbow against your body while you rotate"
+      },
+      "range_top": "Lift a bit higher: target {target:.0f} deg, you reached {reached:.0f} deg",
+      "unsure": "Not sure about this rep - check that your whole body is in view",
+      "partial": "Rep cut by the start/end of the recording - not scored"
+    },
+    "min_confidence": 0.5,
+    "top_tolerance_deg": {
+      "e1": 15.0,
+      "e2": 15.0,
+      "e3": 10.0
+    },
+    "therapist_target_deg": {
+      "e1": null,
+      "e2": null,
+      "e3": null
+    },
+    "rule": "confidence < min_confidence -> 'unsure' message; partial reps (cut by start/end) are counted, not scored"
+  },
+  "silhouette": {
+    "names": [
+      "gap40",
+      "gap55",
+      "gap70",
+      "gap85",
+      "shtop65",
+      "shtop80",
+      "neck65",
+      "neck80",
+      "mask_ok"
+    ],
+    "gap_fracs": [
+      0.4,
+      0.55,
+      0.7,
+      0.85
+    ],
+    "top_fracs": [
+      0.65,
+      0.8
+    ],
+    "function": "pose_worker.sil_features(mask, lm): mask = MediaPipe segmentation mask (float 0..1, > 0.5 = person) at the size of the analysed frame, lm = normalized landmarks (33x5); returns (2, 9): row 0 = person's LEFT arm, row 1 = RIGHT arm"
+  }
+}

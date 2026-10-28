@@ -1,0 +1,1555 @@
+{
+  "@@locale": "en",
+  "accountDeleted": "Account deleted",
+  "accountRoleActive": "Role: {role} | Active: {active}",
+  "@accountRoleActive": {
+    "placeholders": {
+      "active": {
+        "type": "String"
+      },
+      "role": {
+        "type": "String"
+      }
+    }
+  },
+  "accounts": "Accounts",
+  "addMember": "Add member",
+  "addNewMember": "Add new member",
+  "address": "Address",
+  "adminHome": "Admin Home",
+  "aiCoachBanner": "Kinex AI Coach: smarter rehab guidance, every day.",
+  "aiFeedback": "AI Feedback",
+  "aiFeedbackFor": "AI Feedback - {name}",
+  "@aiFeedbackFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "all": "All",
+  "allSetsDone": "All sets done! ✓",
+  "approve": "Approve",
+  "armSideLeft": "left",
+  "armSideRight": "right",
+  "assign": "Assign",
+  "assignExercise": "Assign Exercise",
+  "assignExerciseTitle": "Assign exercise",
+  "assignedBy": "Assigned by",
+  "assignedExercises": "Assigned Exercises",
+  "assignedPatients": "Assigned patients",
+  "assignedPhysiotherapist": "Assigned physiotherapist",
+  "assistantAndroidOnly": "The live exercise assistant runs on Android phones.",
+  "assistantArmLabel": "Arm: {arm}",
+  "@assistantArmLabel": {
+    "placeholders": {
+      "arm": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantCamera": "Camera",
+  "assistantCameraBack": "Back",
+  "assistantCameraFront": "Front",
+  "assistantCameraNeeded": "Camera access is needed for the exercise assistant.",
+  "assistantDevSettings": "Developer settings",
+  "assistantFullResolution": "Full-resolution analysis (1280 px)",
+  "assistantFullResolutionHint": "Slower. By default the frames are analysed at 640 px: the same landmarks, much less work per frame.",
+  "assistantInjuredArmLabel": "Injured arm: {arm}",
+  "@assistantInjuredArmLabel": {
+    "placeholders": {
+      "arm": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantLegLabel": "Lifted leg: {leg}",
+  "@assistantLegLabel": {
+    "placeholders": {
+      "leg": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantModel": "Model",
+  "assistantModelMultitask": "Multi-task network",
+  "assistantModelSeparate": "Separate networks",
+  "assistantPlacementTip": "Put the phone upright in front of you, about 2-3 m away, so that your whole body from the knees up is in view. Stand still for 2 seconds when asked, then start.",
+  "assistantPlacementTipLeg": "Put the phone upright in front of you at hip height, about 2-3 m away, so that your WHOLE body is in view, feet included. Put the chair beside the leg you stand on and hold it. Stand still for 2 seconds when asked, then start.",
+  "assistantSetByPhysio": "set by your physiotherapist",
+  "assistantShowTiming": "Show timing overlay",
+  "assistantStartSet": "Start the set",
+  "assistantTargetLabel": "Your target: {deg}°",
+  "@assistantTargetLabel": {
+    "placeholders": {
+      "deg": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantTitle": "Exercise assistant",
+  "assistantUseGpu": "Run pose detection on the GPU (developer)",
+  "assistantUseGpuHint": "Faster on many phones; uses the CPU if the phone cannot. The timing line shows which one runs.",
+  "assistantVoice": "Voice assistant",
+  "assistantVoiceOn": "Spoken instructions and corrections",
+  "assistantVoiceRate": "Speaking speed",
+  "becomePartnerClinic": "Become a partner clinic",
+  "birthDate": "Birth date",
+  "birthDateRequiredForPatients": "Birth date is required for patients.",
+  "bodyRegionHip": "Hip",
+  "bodyRegionOther": "Other exercises",
+  "bodyRegionShoulder": "Shoulder",
+  "cancel": "Cancel",
+  "changeLanguage": "Change language",
+  "clinic": "Clinic",
+  "clinicComplaints": "Clinic Complaints",
+  "clinicDashboard": "Clinic Dashboard",
+  "clinicEmail": "Clinic email",
+  "clinicMembersCount": "Clinic members ({count})",
+  "@clinicMembersCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "clinicName": "Clinic name",
+  "clinicOnlySignupNote": "Only clinics can register here. Patients and physiotherapists are created from the clinic dashboard using the logged-in clinic account.",
+  "clinicProfile": "Clinic profile",
+  "clinicProfileSubtitle": "Update your clinic information and picture.",
+  "clinicRegistration": "Clinic registration",
+  "clinicRegistrationIntro": "Create a clinic account. Upload your professional justification file so admin can validate your registration quickly.",
+  "clinicValue": "Clinic: {name}",
+  "@clinicValue": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "clinics": "Clinics",
+  "comingSoon": "{title} coming soon",
+  "@comingSoon": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "complaintSentSuccessfully": "Complaint sent successfully.",
+  "complaints": "Complaints",
+  "completeLabel": "Complete",
+  "completed": "Completed",
+  "completedOfAssigned": "{completed} completed / {assigned} assigned",
+  "@completedOfAssigned": {
+    "placeholders": {
+      "completed": {
+        "type": "String"
+      },
+      "assigned": {
+        "type": "String"
+      }
+    }
+  },
+  "completedRepsOf": "Completed – {done}{target} reps ✓",
+  "@completedRepsOf": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "target": {
+        "type": "String"
+      }
+    }
+  },
+  "continueLabel": "Continue",
+  "continueToLogin": "Continue to Login",
+  "createMember": "Create member",
+  "dailyCompletionPercent": "Daily Completion %",
+  "dateAtTime": "{date} at {time}",
+  "@dateAtTime": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "dateValue": "Date: {date}",
+  "@dateValue": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "delete": "Delete",
+  "deleteAccount": "Delete account",
+  "deleteAccountConfirm": "Delete \"{label}\" (ID: {id})?",
+  "@deleteAccountConfirm": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      },
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteMember": "Delete member",
+  "deleteMemberConfirm": "Delete {role} \"{name}\" from this clinic?",
+  "@deleteMemberConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "role": {
+        "type": "String"
+      }
+    }
+  },
+  "describeYourComplaint": "Describe your complaint",
+  "description": "Description",
+  "descriptionRequired": "Description is required",
+  "documentAttached": "Document attached",
+  "done": "Done",
+  "e4ProgressEmpty": "No hip abduction set recorded yet.",
+  "e4ProgressGoodShare": "Good form: {percent} %",
+  "@e4ProgressGoodShare": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "e4ProgressMedian": "Median lift",
+  "e4ProgressPerClass": "Reps per class",
+  "e4ProgressTarget": "Target",
+  "e4ProgressTitle": "Hip abduction - range over time",
+  "e4ProgressUsualLift": "Usual lift: {deg}°",
+  "@e4ProgressUsualLift": {
+    "placeholders": {
+      "deg": {
+        "type": "String"
+      }
+    }
+  },
+  "editInformation": "Edit information",
+  "editInformationTitle": "Edit Information",
+  "editProfile": "Edit Profile",
+  "email": "Email",
+  "emailAddress": "Email address",
+  "emailHint": "name@example.com",
+  "emailValue": "Email: {email}",
+  "@emailValue": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "enterValidEmail": "Enter a valid email address",
+  "enterValidNumber": "Enter a valid number",
+  "enterYourPassword": "Enter your password",
+  "error": "Error",
+  "errorInvalidResponse": "Invalid response format from server",
+  "errorServerStatus": "Server error ({code}).",
+  "@errorServerStatus": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "errorServerUnreachable": "Unable to reach the server. Check your connection and try again.",
+  "errorTimeout": "The request timed out. Please try again.",
+  "exE1Desc": "Hold a stick with both hands and lift it forward and up, then lower it all the way down.",
+  "exE1Simple": "Hold the stick with both hands. Lift it up slowly. Then bring it all the way down.",
+  "exE1Title": "Forward elevation with a stick",
+  "exE2Desc": "Lift one straight arm out to the side, then bring it back down along your body.",
+  "exE2Simple": "Keep your arm straight. Lift it to the side. Then put it back down.",
+  "exE2Title": "Arm abduction",
+  "exE3Desc": "Keep the elbow against your body, bent at 90 degrees, and rotate the forearm outward and back.",
+  "exE3Simple": "Keep your elbow against your side. Turn your hand outward. Then bring it back.",
+  "exE3Title": "Arm rotation, elbow at the side",
+  "exE4Desc": "Stand facing the phone with a chair beside you and hold it with the hand on the side of the leg you stand on. Lift the other leg sideways, knee straight and trunk upright, then lower it with control. Lift only as far as you can with a good form: your physiotherapist sets your target.",
+  "exE4Simple": "Hold the chair. Keep your knee straight. Lift your leg to the side. Then put it back down slowly.",
+  "exE4Title": "Standing hip abduction",
+  "exercise": "Exercise",
+  "exerciseAnalysisFailed": "Exercise analysis failed: {error}",
+  "@exerciseAnalysisFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "exerciseAssigned": "Exercise assigned",
+  "exerciseAssignedSuccessfully": "Exercise assigned successfully.",
+  "exerciseCompletedCheck": "Exercise completed ✓",
+  "exerciseDataReady": "Exercise data ready",
+  "exercises": "Exercises",
+  "exercisesLoggedOf": "{reported} / {total} exercises logged",
+  "@exercisesLoggedOf": {
+    "placeholders": {
+      "reported": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "fbBelowTarget": "Good form - lift your leg a bit higher: target {target} deg, you reached {reached} deg",
+  "@fbBelowTarget": {
+    "placeholders": {
+      "target": {
+        "type": "int"
+      },
+      "reached": {
+        "type": "int"
+      }
+    }
+  },
+  "fbBelowTargetSimple": "Good. Now lift your leg a little higher.",
+  "fbE1Elb": "Keep your elbows straight while you lift the stick",
+  "fbE1ElbSimple": "Arms straight. Do not bend your elbows.",
+  "fbE1Imb": "Lift the stick evenly - raise your {arm} arm as high as the other one",
+  "@fbE1Imb": {
+    "placeholders": {
+      "arm": {
+        "type": "String"
+      }
+    }
+  },
+  "fbE1ImbSimple": "Lift both hands to the same height.",
+  "fbE1Rngdown": "Lower the stick all the way down between reps",
+  "fbE1RngdownSimple": "Go all the way down each time.",
+  "fbE2Elb": "Keep your elbow straight",
+  "fbE2ElbSimple": "Arm straight. Do not bend your elbow.",
+  "fbE2Lean": "Keep your trunk upright - do not lean to lift the arm",
+  "fbE2LeanSimple": "Stand straight. Do not lean to the side.",
+  "fbE2Rngdown": "Bring your arm all the way down to your side between reps",
+  "fbE2RngdownSimple": "Put your arm all the way down each time.",
+  "fbE2Shld": "Do not shrug - keep your shoulder down while the arm goes up to shoulder height",
+  "fbE2ShldSimple": "Keep your shoulder low and relaxed.",
+  "fbE3Wrong": "Keep your elbow against your body while you rotate",
+  "fbE3WrongSimple": "Keep your elbow touching your side.",
+  "fbE4Knee": "Keep your {leg} knee straight while you lift the leg",
+  "@fbE4Knee": {
+    "placeholders": {
+      "leg": {
+        "type": "String"
+      }
+    }
+  },
+  "fbE4KneeSimple": "Knee straight. Do not bend it.",
+  "fbE4Leanin": "Keep your trunk upright - do not lean toward the leg you lift",
+  "fbE4LeaninSimple": "Stand straight. Do not lean toward the leg.",
+  "fbE4Leanout": "Keep your trunk upright - do not lean away from the leg (toward the chair)",
+  "fbE4LeanoutSimple": "Stand straight. Do not lean toward the chair.",
+  "fbE4Unsure": "Not sure about this rep - check that your whole body, feet included, is in view",
+  "fbE4UnsureSimple": "Step back so the camera sees your feet.",
+  "fbGood": "Good rep - well done",
+  "fbPartial": "Rep cut by the start/end of the recording - not scored",
+  "fbUnsure": "Not sure about this rep - check that your whole body is in view",
+  "fbUnsureSimple": "Step back so the camera sees your whole body.",
+  "fbWrongArm": "Wrong arm - switch to your {arm} arm: this rep does not count",
+  "@fbWrongArm": {
+    "placeholders": {
+      "arm": {
+        "type": "String"
+      }
+    }
+  },
+  "fbWrongArmSimple": "Use your {arm} arm.",
+  "@fbWrongArmSimple": {
+    "placeholders": {
+      "arm": {
+        "type": "String"
+      }
+    }
+  },
+  "fbWrongLeg": "Wrong leg - switch to your {leg} leg: this rep does not count",
+  "@fbWrongLeg": {
+    "placeholders": {
+      "leg": {
+        "type": "String"
+      }
+    }
+  },
+  "fbWrongLegSimple": "Lift your {leg} leg.",
+  "@fbWrongLegSimple": {
+    "placeholders": {
+      "leg": {
+        "type": "String"
+      }
+    }
+  },
+  "framesAnalyzed": "Frames analyzed: {count}",
+  "@framesAnalyzed": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "fullName": "Full name",
+  "hiPatient": "Hi, Patient",
+  "history": "History",
+  "home": "Home",
+  "iPaidVerify": "I paid — Verify my payment",
+  "invalidEmailFormat": "Invalid email format",
+  "invalidPhoneFormat": "Invalid phone format",
+  "invalidVideoUrl": "Invalid or unsupported video URL",
+  "justificationFile": "Justification file ",
+  "justificationReviewNote": "This file is reviewed by admin before account approval.",
+  "keypointsExtracted": "Keypoints extracted: {count}",
+  "@keypointsExtracted": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "latestRepsDone": "Latest: {reps} reps done",
+  "@latestRepsDone": {
+    "placeholders": {
+      "reps": {
+        "type": "String"
+      }
+    }
+  },
+  "legSideLeft": "left",
+  "legSideRight": "right",
+  "liveArmAngle": "arm angle",
+  "liveArmMoving": "The {arm} arm is moving: scoring the {arm} arm",
+  "@liveArmMoving": {
+    "placeholders": {
+      "arm": {
+        "type": "String"
+      }
+    }
+  },
+  "liveCameraProblem": "Camera problem: {error}",
+  "@liveCameraProblem": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "liveDone": "Done",
+  "liveFinishSet": "Finish the set",
+  "liveFinishing": "Scoring the last reps...",
+  "liveLegAngle": "leg angle",
+  "livePainBody": "Do not continue this exercise now. Please follow your physiotherapist's guidance before continuing. Your report will be sent to your physiotherapist: it is what you reported, not a medical diagnosis.",
+  "livePainTitle": "Paused because you reported pain",
+  "livePause": "Pause",
+  "livePausedBody": "Press Resume when you are ready. You will be asked to stand still again before restarting.",
+  "livePausedTitle": "Exercise paused",
+  "livePositioning": "Step back until your whole body from the knees up is in view",
+  "liveRep": "Rep {n}",
+  "@liveRep": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "liveReportPain": "I feel pain",
+  "liveReps": "reps",
+  "liveResume": "Resume",
+  "liveStandStill": "Stand still... {seconds}",
+  "@liveStandStill": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "liveStart": "Start!",
+  "liveStarting": "Starting the camera...",
+  "liveWrongArm": "You are moving your {moving} arm - switch to your {arm} arm. Those reps do not count.",
+  "@liveWrongArm": {
+    "placeholders": {
+      "moving": {
+        "type": "String"
+      },
+      "arm": {
+        "type": "String"
+      }
+    }
+  },
+  "liveWrongLeg": "You are lifting your {moving} leg - switch to your {leg} leg. Those reps do not count.",
+  "@liveWrongLeg": {
+    "placeholders": {
+      "moving": {
+        "type": "String"
+      },
+      "leg": {
+        "type": "String"
+      }
+    }
+  },
+  "logOut": "Log out",
+  "logProgress": "Log Progress",
+  "logProgressFor": "Log Progress – {name}",
+  "@logProgressFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "login": "Login",
+  "loginFailedTitle": "Unable to Sign In",
+  "loginIntro": "Track your recovery, follow smarter exercise guidance, and stay connected with your physiotherapist.",
+  "loginSuccessBody": "Welcome back to your Kinex workspace.",
+  "loginSuccessTitle": "Login Successful!",
+  "loginTagline": "Continue your AI-powered rehab journey.",
+  "logout": "Logout",
+  "logsCount": "{count} logs",
+  "@logsCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "manage": "Manage",
+  "manageDetailsAndClinic": "Manage your details and clinic access.",
+  "manageProfileAndSupport": "Manage your personal info and support options.",
+  "me": "Me",
+  "members": "Members",
+  "message": "Message",
+  "micError": "Voice command error. Try again or use the buttons.",
+  "micHeard": "Heard: \"{text}\"",
+  "@micHeard": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "micListening": "Listening...",
+  "micPermissionDenied": "Microphone permission was refused. Allow it in the phone settings to use voice commands.",
+  "micProcessing": "Understanding...",
+  "micReady": "Tap the microphone to talk",
+  "micSpeaking": "Speaking...",
+  "micTooltip": "Microphone",
+  "micUnavailable": "Voice commands are not available on this phone. Use the buttons.",
+  "minSixCharacters": "Min 6 characters",
+  "minSixChars": "Min 6 chars",
+  "minThreeCharacters": "Min 3 characters",
+  "monthNames": "January,February,March,April,May,June,July,August,September,October,November,December",
+  "monthShortNames": "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec",
+  "monthYear": "{month} {year}",
+  "@monthYear": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      },
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "monthly": "Monthly",
+  "monthlyPricingNote": "Monthly: 5 EUR + 0.10 EUR per patient",
+  "myPatients": "My Patients",
+  "myTherapist": "My Physiotherapist",
+  "name": "Name",
+  "nameAndPhoneRequired": "Name and phone are required",
+  "nameRequired": "Name is required",
+  "newPasswordOptional": "New password (optional)",
+  "noAiFeedbackYet": "No AI feedback yet.",
+  "noAssignedExercises": "No assigned exercises yet.",
+  "noAssignedPatients": "No assigned patients yet.",
+  "noAssignedTherapist": "No assigned physiotherapist",
+  "noAssignment": "No assignment",
+  "noComplaintsFound": "No complaints found.",
+  "noExerciseDescription": "No description available for this exercise.",
+  "noExerciseInCatalog": "No available exercise in catalog.",
+  "noExercisesForDay": "No exercises found for the selected day.",
+  "noExercisesForFilter": "No exercises found for this filter.",
+  "noExercisesToday": "No exercises assigned for today yet.",
+  "noJustificationFile": "No justification file available.",
+  "noMatchingAccounts": "No matching accounts found.",
+  "noMatchingClinics": "No matching clinics found.",
+  "noMembersYet": "No members yet",
+  "noMessagesYet": "No messages yet. Start the conversation.",
+  "noPaymentReference": "No payment reference. Start payment first.",
+  "noPendingClinics": "No pending clinics found.",
+  "noProgressReportsForExercise": "No progress reports yet for this exercise.",
+  "noSets": "No sets",
+  "notesOptional": "Notes (optional)",
+  "notifAssistantNotes": "What the assistant noted",
+  "notifCategoryAll": "All",
+  "notifCategoryMessages": "Messages",
+  "notifCategoryPain": "Pain reports",
+  "notifCategoryProgress": "Exercise progress",
+  "notifCategoryRoutine": "Routine updates",
+  "notifCorrectReps": "Correct",
+  "notifDay": "Day",
+  "notifDetailTitle": "Notification",
+  "notifDoneThatDay": "Recorded that day",
+  "notifDraftHint": "A suggested message will be placed in the chat box. Nothing is sent until you press Send.",
+  "notifDraftInactivity": "Hello {name}, I noticed that no exercises were recorded on {date}. Is everything all right?",
+  "@notifDraftInactivity": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifDraftIncorrect": "Hello {name}, I looked at your {exercise} set: many repetitions were not done as expected. Let us review the movement together.",
+  "@notifDraftIncorrect": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "exercise": {
+        "type": "String"
+      }
+    }
+  },
+  "notifDraftPain": "Hello {name}, I saw that you reported pain during {exercise}. How are you feeling now?",
+  "@notifDraftPain": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "exercise": {
+        "type": "String"
+      }
+    }
+  },
+  "notifEmpty": "No notifications yet",
+  "notifEmptyCategory": "Nothing in this category",
+  "notifHoursAgo": "{n} h ago",
+  "@notifHoursAgo": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "notifInactivityBody": "{date} · {count} exercise(s) were prescribed",
+  "@notifInactivityBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifInactivityTitle": "{name} did no exercises",
+  "@notifInactivityTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifIncorrectBody": "{exercise} · {mistakes} of {judged} judged repetitions incorrect",
+  "@notifIncorrectBody": {
+    "placeholders": {
+      "exercise": {
+        "type": "String"
+      },
+      "mistakes": {
+        "type": "int"
+      },
+      "judged": {
+        "type": "int"
+      }
+    }
+  },
+  "notifIncorrectReps": "Incorrect",
+  "notifIncorrectTitle": "{name}: most repetitions incorrect",
+  "@notifIncorrectTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifJustNow": "just now",
+  "notifLoadError": "Could not load the notifications. Check the connection and try again.",
+  "notifLoadMore": "Load more",
+  "notifMarkAllRead": "Mark all as read",
+  "notifMarkRead": "Mark as read",
+  "notifMessagePatient": "Message patient",
+  "notifMessageTitle": "New message from {name}",
+  "@notifMessageTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifMinutesAgo": "{n} min ago",
+  "@notifMinutesAgo": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "notifNoLongerAssigned": "This patient is no longer assigned to you.",
+  "notifNothingRecorded": "No exercise was recorded that day.",
+  "notifOpenConversation": "Open conversation",
+  "notifOpenExercise": "Open exercise",
+  "notifOpenPatient": "Open patient file",
+  "notifPainBodyDuring": "{exercise} · reported during the exercise",
+  "@notifPainBodyDuring": {
+    "placeholders": {
+      "exercise": {
+        "type": "String"
+      }
+    }
+  },
+  "notifPainBodyLevel": "{exercise} · pain {level}/10",
+  "@notifPainBodyLevel": {
+    "placeholders": {
+      "exercise": {
+        "type": "String"
+      },
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "notifPainDuringSet": "Reported during the exercise",
+  "notifPainEvent": "At {time} of the set, {source}",
+  "@notifPainEvent": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      },
+      "source": {
+        "type": "String"
+      }
+    }
+  },
+  "notifPainNoRating": "No rating given yet",
+  "notifPainRating": "Pain rating",
+  "notifPainTitle": "{name} reported pain",
+  "@notifPainTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifPatientNotes": "Patient notes",
+  "notifPatientReportOnly": "This is the patient's own report, not a medical finding.",
+  "notifPatientWords": "Patient said: \"{words}\"",
+  "@notifPatientWords": {
+    "placeholders": {
+      "words": {
+        "type": "String"
+      }
+    }
+  },
+  "notifPrefInactivity": "No exercise done",
+  "notifPrefInactivityHint": "A patient had exercises due and recorded none that day (checked each night)",
+  "notifPrefIncorrect": "Mostly incorrect repetitions",
+  "notifPrefIncorrectHint": "At least 90 % of the judged repetitions of a set were incorrect (8 or more judged)",
+  "notifPrefMessageHint": "A patient sends you a message",
+  "notifPrefPainHint": "A patient reports pain during an exercise, or rates it 4/10 or more",
+  "notifPrefPainOffBody": "You will no longer be told when a patient reports pain. The reports stay in their progress history.",
+  "notifPrefPainOffTitle": "Turn off pain alerts?",
+  "notifPrefTurnOff": "Turn off",
+  "notifPrescribed": "Exercises prescribed then",
+  "notifReportedAt": "Reported",
+  "notifRepsDone": "{reps} reps",
+  "@notifRepsDone": {
+    "placeholders": {
+      "reps": {
+        "type": "int"
+      }
+    }
+  },
+  "notifResolved": "Resolved",
+  "notifResumedSince": "The patient has exercised again since.",
+  "notifRoutineBody": "{exercise}: {sets} sets × {reps} reps",
+  "@notifRoutineBody": {
+    "placeholders": {
+      "exercise": {
+        "type": "String"
+      },
+      "sets": {
+        "type": "int"
+      },
+      "reps": {
+        "type": "int"
+      }
+    }
+  },
+  "notifRoutineTitle": "Your exercise plan was updated",
+  "notifSetResult": "Set result",
+  "notifSetsReps": "{sets} × {reps}",
+  "@notifSetsReps": {
+    "placeholders": {
+      "sets": {
+        "type": "int"
+      },
+      "reps": {
+        "type": "int"
+      }
+    }
+  },
+  "notifSettingsIntro": "Choose what you are notified about. A type that is off is not recorded at all: turning it back on does not bring back what happened meanwhile.",
+  "notifSettingsTitle": "Notification settings",
+  "notifSignedOut": "Your session has expired. Please log in again.",
+  "notifTrackingConfirmed": "All {judged} repetitions were judged with confident tracking.",
+  "@notifTrackingConfirmed": {
+    "placeholders": {
+      "judged": {
+        "type": "int"
+      }
+    }
+  },
+  "notifTrackingPartly": "{unsure} repetition(s) could not be judged reliably by the camera and are not counted in this alert.",
+  "@notifTrackingPartly": {
+    "placeholders": {
+      "unsure": {
+        "type": "int"
+      }
+    }
+  },
+  "notifUnavailable": "This item is no longer available.",
+  "notifUnreadCount": "{count} unread",
+  "@notifUnreadCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifUnsureReps": "Not judged",
+  "notifUrgent": "Urgent",
+  "notifYesterday": "Yesterday",
+  "notifications": "Notifications",
+  "notificationsComingSoon": "Notification preferences coming soon.",
+  "ok": "OK",
+  "onboardingAudience": "Designed for patients and physiotherapists",
+  "onboardingCardHelper": "Built to support safer daily rehab sessions",
+  "onboardingEyebrow1": "Motion intelligence",
+  "onboardingEyebrow2": "Guided recovery",
+  "onboardingEyebrow3": "Physiotherapist connection",
+  "onboardingFooter": "Follow exercises, track your progression, and stay connected with your physiotherapist in one secure app.",
+  "onboardingHeadline": "Recover smarter,\nmove with confidence.",
+  "onboardingIntro": "Personalized AI guidance for rehabilitation exercises, progress tracking, and physiotherapist collaboration.",
+  "onboardingSubtitle1": "Advanced pose estimation helps patients perform each exercise with safer and more accurate form.",
+  "onboardingSubtitle2": "Receive clear corrective cues and confidence-building feedback while following your rehab plan.",
+  "onboardingSubtitle3": "Share progress remotely so your physiotherapist can monitor recovery and personalize your next steps.",
+  "onboardingTitle1": "AI-Powered Movement Analysis",
+  "onboardingTitle2": "Instant Form Correction",
+  "onboardingTitle3": "Connected to Your Physiotherapist",
+  "oneSet": "{count} set",
+  "@oneSet": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "openDoc": "Open doc",
+  "overview": "Overview",
+  "painLevel": "Pain level",
+  "painLevelLower": "pain level",
+  "painOutOfTen": "{pain}/10",
+  "@painOutOfTen": {
+    "placeholders": {
+      "pain": {
+        "type": "String"
+      }
+    }
+  },
+  "painOutOfTenSpaced": "{pain} / 10",
+  "@painOutOfTenSpaced": {
+    "placeholders": {
+      "pain": {
+        "type": "String"
+      }
+    }
+  },
+  "password": "Password",
+  "passwordMinLength": "Password must be at least 6 characters",
+  "patient": "Patient",
+  "patientChat": "Patient chat",
+  "patientComplaints": "Patient Complaints",
+  "patientProgress": "Patient Progress",
+  "patients": "Patients",
+  "payMonthlyWithStripe": "Pay Monthly with Stripe",
+  "payYearlyWithStripe": "Pay Yearly with Stripe",
+  "payloadPreview": "Payload preview (ready to send to your AI model):",
+  "pending": "Pending",
+  "pendingClinics": "Pending Clinics",
+  "percentValue": "{percent}%",
+  "@percentValue": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "phone": "Phone",
+  "phoneRequired": "Phone is required",
+  "phoneValue": "Phone: {phone}",
+  "@phoneValue": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "physioAiBanner": "Kinex AI Rehab dashboard for smarter patient follow-up.",
+  "physioHome": "Physiotherapist Home",
+  "physioProfile": "Physiotherapist Profile",
+  "physiotherapist": "Physiotherapist",
+  "physiotherapists": "Physiotherapists",
+  "pleaseEnterEmail": "Please enter your email",
+  "pleaseEnterPassword": "Please enter your password",
+  "premiumActive": "Premium active",
+  "premiumActiveCheck": "Premium active ✅",
+  "premiumLockedDescription": "Unlock video capture with AI feedback and premium patient features.",
+  "premiumUnlockedDescription": "Video upload and AI feedback are unlocked for your patients.",
+  "preparingExercise": "Preparing exercise...",
+  "pricingMonthlyLine": "Monthly = 5.00 + (0.10 x {count}) = {total} EUR",
+  "@pricingMonthlyLine": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "pricingPatientsLine": "Patients: {count}",
+  "@pricingPatientsLine": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "pricingYearlyLine": "Yearly = 50.00 + (0.10 x {count}) = {total} EUR",
+  "@pricingYearlyLine": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "profile": "Profile",
+  "profilePhotoUpdated": "Profile photo updated.",
+  "profileUpdatedSuccessfully": "Profile updated successfully.",
+  "progress": "Progress",
+  "progressReps": "Progress: {current} / {total} reps",
+  "@progressReps": {
+    "placeholders": {
+      "current": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "progressRepsOf": "Progress: {done}{target} reps",
+  "@progressRepsOf": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "target": {
+        "type": "String"
+      }
+    }
+  },
+  "recordingLockedSubscription": "Recording locked (subscription required)",
+  "refresh": "Refresh",
+  "registerYourClinic": "Register your clinic",
+  "registrationFailed": "Registration failed",
+  "reject": "Reject",
+  "repLabelBelowTarget": "Good form – below your target range",
+  "repLabelGood": "Good",
+  "repLabelKnee": "Knee bends",
+  "repLabelLeanin": "Leaning toward the lifted leg",
+  "repLabelLeanout": "Leaning away from the lifted leg",
+  "repLabelUnsure": "Not sure",
+  "repLabelWrongSide": "Wrong side – not counted",
+  "reportBelowTarget": "{count} good-form rep(s) below the target.",
+  "@reportBelowTarget": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reportDiscomfort": "Patient said they were uncomfortable at {time}. Set paused.",
+  "@reportDiscomfort": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "reportMistakes": "Mistakes: {list}.",
+  "@reportMistakes": {
+    "placeholders": {
+      "list": {
+        "type": "String"
+      }
+    }
+  },
+  "reportNotes": "Live camera set - {exercise} ({arm} arm): {judged} reps judged, {good} good.",
+  "@reportNotes": {
+    "placeholders": {
+      "exercise": {
+        "type": "String"
+      },
+      "arm": {
+        "type": "String"
+      },
+      "judged": {
+        "type": "int"
+      },
+      "good": {
+        "type": "int"
+      }
+    }
+  },
+  "reportNotesLeg": "Live camera set - {exercise} ({leg} leg): {judged} reps judged, {good} good.",
+  "@reportNotesLeg": {
+    "placeholders": {
+      "exercise": {
+        "type": "String"
+      },
+      "leg": {
+        "type": "String"
+      },
+      "judged": {
+        "type": "int"
+      },
+      "good": {
+        "type": "int"
+      }
+    }
+  },
+  "reportPainEvent": "Patient-reported pain at {time} ({source}) - reported by the patient, not a medical finding. Set paused.",
+  "@reportPainEvent": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      },
+      "source": {
+        "type": "String"
+      }
+    }
+  },
+  "reportSourceButton": "with the button",
+  "reportSourceVoice": "by voice",
+  "reportUnsure": "{count} not sure.",
+  "@reportUnsure": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reportWrongSide": "{count} rep(s) with the wrong side, not counted.",
+  "@reportWrongSide": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reps": "Reps",
+  "repsBullet": "• {count} reps",
+  "@repsBullet": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "repsCompleted": "Reps completed",
+  "repsCount": "{count} reps",
+  "@repsCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "repsDone": "reps done",
+  "requestSent": "Request sent",
+  "required": "Required",
+  "retry": "Retry",
+  "role": "Role",
+  "roleAdmin": "Admin",
+  "save": "Save",
+  "saveChanges": "Save Changes",
+  "saveProfile": "Save Profile",
+  "saveProfileLower": "Save profile",
+  "scoreValue": "Score: {score}",
+  "@scoreValue": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "searchAccountsByName": "Search accounts by name only",
+  "searchClinics": "Search clinics (name, email, phone, ID)",
+  "searchMembers": "Search patient / physiotherapist",
+  "searchPendingClinics": "Search pending clinics (name, email, phone, ID)",
+  "selectBirthDate": "Select birth date",
+  "selectExerciseAndValidSetsReps": "Select exercise and valid sets/reps.",
+  "send": "Send",
+  "sendComplaint": "Send Complaint",
+  "sessionBelowTargetShort": "{count} below target",
+  "@sessionBelowTargetShort": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "sessionFeedbackTitle": "Session feedback",
+  "sessionGoodShort": "{count} good",
+  "@sessionGoodShort": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "sessionHistory": "Session History",
+  "sessionManualReport": "Reported by hand (no camera set)",
+  "sessionMistakesShort": "{count} to correct",
+  "@sessionMistakesShort": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "sessionNoRepDetail": "Rep-by-rep details are not available for this set (recorded before the update).",
+  "sessionNoSets": "No live camera set was recorded for this session.",
+  "sessionNotes": "Notes",
+  "sessionOpenFeedback": "AI feedback",
+  "sessionPainDuring": "Pain reported during the set",
+  "sessionPainLevel": "Pain {pain}/10",
+  "@sessionPainLevel": {
+    "placeholders": {
+      "pain": {
+        "type": "String"
+      }
+    }
+  },
+  "sessionScore": "{percent} % good",
+  "@sessionScore": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "sessionSetTitle": "Set {number} · {time}",
+  "@sessionSetTitle": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "sessionWrongSideShort": "{count} wrong side",
+  "@sessionWrongSideShort": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "sessionsLogged": "{count} sessions logged",
+  "@sessionsLogged": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "sets": "Sets",
+  "setsCompleted": "Sets completed",
+  "setsCount": "{count} sets",
+  "@setsCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "setsDoneLower": "sets done",
+  "setsTimesReps": "{sets} sets × {reps} reps",
+  "@setsTimesReps": {
+    "placeholders": {
+      "sets": {
+        "type": "String"
+      },
+      "reps": {
+        "type": "String"
+      }
+    }
+  },
+  "settings": "Settings",
+  "shortDate": "{month} {day}, {year}",
+  "@shortDate": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "month": {
+        "type": "String"
+      },
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "signInToYourAccount": "Sign in to your account",
+  "specialization": "Specialization",
+  "srvAccountDeleted": "Account deleted",
+  "srvAccountNotFound": "Account not found",
+  "srvAccountUpdated": "Account updated",
+  "srvAdminNotDeletable": "Admin accounts cannot be deleted",
+  "srvAdminRequired": "Admin access required",
+  "srvAiFeedbackSubscription": "AI feedback is available only with active clinic subscription",
+  "srvAiVideoUploaded": "AI feedback video uploaded successfully",
+  "srvAssignmentNotFound": "Patient exercise assignment not found",
+  "srvCannotDeleteSelf": "You cannot delete your own admin account",
+  "srvClinicApproved": "Clinic approved",
+  "srvClinicDeleted": "Clinic deleted",
+  "srvClinicMovedToWaiting": "Clinic moved to waiting state",
+  "srvClinicMustBeApproved": "Clinic account must be approved before using this feature",
+  "srvClinicNameMin": "Clinic name must be at least 3 characters",
+  "srvClinicProfileNotFound": "Clinic profile not found",
+  "srvClinicProfileUpdated": "Clinic profile updated successfully",
+  "srvClinicRegistered": "Clinic registered. Waiting for admin approval.",
+  "srvClinicUpdated": "Clinic updated",
+  "srvComplaintSubmitted": "Complaint submitted successfully",
+  "srvDescriptionMin": "Description must be at least 5 characters",
+  "srvEmailExists": "Email already exists",
+  "srvEmailPasswordRequired": "Email and password are required",
+  "srvExerciseAssigned": "Exercise assigned successfully",
+  "srvExerciseCompletedSaved": "Exercise completed and progress saved",
+  "srvExerciseNotFound": "Exercise not found",
+  "srvExerciseRemoved": "Exercise removed successfully",
+  "srvInvalidPassword": "Invalid password",
+  "srvInvalidPhoneNumber": "Invalid phone number",
+  "srvJustifRequired": "Justification file is required",
+  "srvJustifSize": "Justification file must be <= 8MB",
+  "srvJustifType": "Justification file must be PDF/JPG/PNG",
+  "srvJustifUploadFailed": "Justification upload failed",
+  "srvMemberNotFound": "Member not found in your clinic",
+  "srvMessageContentRequired": "Message content is required",
+  "srvMessageSent": "Message sent successfully",
+  "srvNameMin": "Name must be at least 2 characters",
+  "srvNoAccountForEmail": "No account found with this email",
+  "srvNoPhysioAssigned": "No physiotherapist is assigned to you yet",
+  "srvPatientCreated": "Patient account created successfully",
+  "srvPatientDeleted": "Patient deleted successfully",
+  "srvPatientNotAssignedToPhysio": "Patient is not assigned to this physiotherapist",
+  "srvPatientNotAssignedToPhysio2": "Patient not assigned to this physiotherapist",
+  "srvPatientProfileNotFound": "Patient profile not found",
+  "srvPaymentConfirmed": "Payment confirmed. Subscription activated successfully.",
+  "srvPaymentNotCompleted": "Payment is not completed yet. Finish checkout and try again.",
+  "srvPaymentRefNotFound": "Payment reference not found for this clinic",
+  "srvPhotoType": "Photo must be JPG/PNG/WEBP",
+  "srvPhotoUploaded": "Photo uploaded successfully",
+  "srvPhysioNotFound": "Physiotherapist not found",
+  "srvPhysioProfileNotFound": "Physiotherapist profile not found",
+  "srvPremiumForVideo": "Premium subscription required for video upload",
+  "srvProfileUpdated": "Profile updated successfully",
+  "srvProgressSaved": "Progress report saved",
+  "srvSetsRepsPositive": "sets and reps must be greater than 0",
+  "srvStripeCheckoutReady": "Stripe checkout ready. Complete payment then tap Verify.",
+  "srvTherapistCreated": "Physiotherapist account created successfully",
+  "srvTherapistDeleted": "Physiotherapist deleted successfully",
+  "srvUnsupportedVideo": "Unsupported video format",
+  "srvWaitingForApproval": "Waiting for approval",
+  "standardPlan": "Standard plan",
+  "startExercise": "Start Exercise",
+  "statsOverview": "Stats Overview",
+  "statusValue": "Status: {status}",
+  "@statusValue": {
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "submitComplaint": "Submit a complaint",
+  "submitForApproval": "Submit for approval",
+  "subscription": "Subscription",
+  "subscriptionActiveAiAvailable": "Subscription active: AI feedback available.",
+  "subscriptionActiveAiUnlocked": "Clinic subscription active - AI Feedback unlocked",
+  "subscriptionInactiveAiHidden": "Subscription inactive: AI feedback hidden.",
+  "subscriptionInactiveAiLocked": "Clinic subscription inactive - AI Feedback locked",
+  "success": "Success",
+  "summaryBelowTarget": "Good form, below your target",
+  "summaryEveryRep": "Every rep",
+  "summaryGoodReps": "good reps",
+  "summaryMistakes": "Mistakes",
+  "summaryNoMistakes": "No mistakes - well done!",
+  "summaryNoneScored": "No rep could be scored.",
+  "summaryNotSent": "Not sent",
+  "summaryNotSentError": "Not sent: {error}",
+  "@summaryNotSentError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "summaryPainQuestion": "How much pain did you feel? (0 = none, 10 = worst)",
+  "summaryPainReported": "You reported pain during this set. Your physiotherapist will see it.",
+  "summaryPeak": "Leg lift: median {deg}° (target {target}°)",
+  "@summaryPeak": {
+    "placeholders": {
+      "deg": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "summaryRepsCounted": "reps counted",
+  "summaryRepsScored": "reps scored",
+  "summarySending": "Sending to your physiotherapist...",
+  "summarySent": "Saved and sent to your physiotherapist",
+  "summaryTitle": "Set summary",
+  "summaryTryAgain": "Try again",
+  "summaryUnsure": "{count} rep(s) could not be judged with confidence.",
+  "@summaryUnsure": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "summaryWrongSideArm": "{count} rep(s) done with the other arm were not counted.",
+  "@summaryWrongSideArm": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "summaryWrongSideLeg": "{count} rep(s) done with the other leg were not counted.",
+  "@summaryWrongSideLeg": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "switchToDarkMode": "Switch to dark mode",
+  "switchToLightMode": "Switch to light mode",
+  "symptomsOptional": "Symptoms (optional)",
+  "symptomsValue": "Symptoms: {symptoms}",
+  "@symptomsValue": {
+    "placeholders": {
+      "symptoms": {
+        "type": "String"
+      }
+    }
+  },
+  "tapButtonToAddMember": "Tap the button below to add one.",
+  "tapToStartLogging": "Tap below to start logging your progress",
+  "tapToUploadDocument": "Tap to upload (PDF/JPG/PNG)",
+  "targetReps": "Target: {reps} reps",
+  "@targetReps": {
+    "placeholders": {
+      "reps": {
+        "type": "String"
+      }
+    }
+  },
+  "targetSetsReps": "Target: {sets} sets × {reps} reps = {total} total reps",
+  "@targetSetsReps": {
+    "placeholders": {
+      "total": {
+        "type": "String"
+      },
+      "reps": {
+        "type": "String"
+      },
+      "sets": {
+        "type": "String"
+      }
+    }
+  },
+  "therapistChat": "Physiotherapist chat",
+  "therapistValue": "Physiotherapist: {name}",
+  "@therapistValue": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "therapists": "Physiotherapists",
+  "thisWeek": "This Week",
+  "thisWeeksActivity": "This week's activity",
+  "today": "Today",
+  "todayUpper": "TODAY",
+  "todaysExercises": "Today's Exercises",
+  "todaysPlan": "Today's Plan",
+  "toggleTheme": "Toggle theme",
+  "totalRepsCompleted": "Total reps completed",
+  "trackedArmLeft": "Left",
+  "trackedArmRight": "Right",
+  "trackedE1": "Forward elevation with a stick (both arms)",
+  "trackedE2": "Arm abduction (one arm)",
+  "trackedE3": "Arm rotation, elbow at the side (one arm)",
+  "trackedE4": "Standing hip abduction (one leg)",
+  "trackedInjuredArm": "Injured arm",
+  "trackedLabel": "Live camera tracking",
+  "trackedLiftedLeg": "Lifted leg",
+  "trackedNone": "No live tracking",
+  "trackedSummary": "{exercise} · {arm} arm",
+  "@trackedSummary": {
+    "placeholders": {
+      "exercise": {
+        "type": "String"
+      },
+      "arm": {
+        "type": "String"
+      }
+    }
+  },
+  "trackedSummaryLeg": "{exercise} · {leg} leg",
+  "@trackedSummaryLeg": {
+    "placeholders": {
+      "exercise": {
+        "type": "String"
+      },
+      "leg": {
+        "type": "String"
+      }
+    }
+  },
+  "trackedTargetAngle": "Target lift angle (°)",
+  "trackedTargetAngleHelp": "Leg angle away from the body at the top of the lift. Leave empty to use {percent} % of the patient's usual lift (or the default angle of {deg}° until it is known).",
+  "@trackedTargetAngleHelp": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      },
+      "deg": {
+        "type": "String"
+      }
+    }
+  },
+  "trackedTargetAngleInvalid": "Enter an angle between 5 and 90°, or leave it empty",
+  "trackedTargetShort": "target {deg}°",
+  "@trackedTargetShort": {
+    "placeholders": {
+      "deg": {
+        "type": "String"
+      }
+    }
+  },
+  "trackedWorkingArm": "Arm that does the exercise",
+  "trackingNotSet": "Your physiotherapist has not set up live camera tracking for this exercise yet.",
+  "truncated": "...truncated...",
+  "typeYourMessage": "Type your message...",
+  "unableToOpenCamera": "Unable to open camera: {error}",
+  "@unableToOpenCamera": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "unableToOpenDocument": "Unable to open the document.",
+  "unassigned": "Unassigned",
+  "unknownError": "Unknown error",
+  "unnamedAccount": "Unnamed account",
+  "updateProgress": "Update Progress",
+  "upgradeToPremium": "Upgrade to Premium",
+  "uploadJustificationPrompt": "Please upload your clinic justification file.",
+  "useRegisteredCredentials": "Use your registered email and password.",
+  "verifyStripePayment": "Verify Stripe payment",
+  "video": "Video",
+  "videoRecordingLocked": "Video recording is locked: clinic subscription is inactive.",
+  "viewComplaints": "View complaints",
+  "viewDocument": "View document",
+  "voiceAlreadyRunning": "The exercise is already running.",
+  "voiceHelp": "You can say: repeat, I don't understand, pause, resume, help, or it hurts.",
+  "voiceLanguageFallback": "Voice is not available in your language on this phone: using English.",
+  "voiceMilestone": "You have completed {count} repetitions.",
+  "@voiceMilestone": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "voiceNotUnderstood": "Sorry, I did not understand. Say help to hear the commands.",
+  "voiceNothingToRepeat": "There is no instruction to repeat yet.",
+  "voicePainClarify": "I paused the exercise to be safe. Are you feeling pain now? If yes, say: it hurts, or press I feel pain.",
+  "voicePainHoldRefuse": "The exercise stays paused because you reported pain. Please follow your physiotherapist's guidance.",
+  "voicePainResponse": "I heard that you are in pain. The exercise is paused. Please follow your physiotherapist's guidance before continuing.",
+  "voicePaused": "The exercise is paused. Press resume when you are ready.",
+  "voiceResumed": "Let's continue. Stand still first.",
+  "voiceSetDone": "The set is finished. Well done.",
+  "voiceStandStill": "Stand still for two seconds.",
+  "voiceStart": "You can start: {exercise}.",
+  "@voiceStart": {
+    "placeholders": {
+      "exercise": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceStepBack": "Please step back so your whole body is visible.",
+  "voiceStepBackFeet": "Step back so the camera sees your whole body, feet included",
+  "voiceTtsUnavailable": "Spoken feedback is not available on this phone.",
+  "voiceUncomfortable": "I paused the exercise. Are you in pain? If yes, say: it hurts, or press I feel pain.",
+  "weekdayInitials": "M,T,W,T,F,S,S",
+  "weekdayShortNames": "Mon,Tue,Wed,Thu,Fri,Sat,Sun",
+  "weeklyGoalPercent": "{percent}% Weekly Goal",
+  "@weeklyGoalPercent": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "welcomeBack": "Welcome back",
+  "yearly": "Yearly",
+  "yearlyPricingNote": "Yearly: 50 EUR + 0.10 EUR per patient"
+}
